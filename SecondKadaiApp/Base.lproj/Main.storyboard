@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QBt-dk-Ckv">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,33 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNa-fl-vig">
-                                <rect key="frame" x="184" y="304" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNa-fl-vig">
+                                <rect key="frame" x="171" y="485" width="72" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="bLE-M9-fJz" kind="unwind" unwindAction="unwind:" id="mHv-jL-6fd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6T-XP-8df">
-                                <rect key="frame" x="186" y="216" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="067-fD-6Nz">
+                                <rect key="frame" x="159" y="454" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="067-fD-6Nz">
-                                <rect key="frame" x="207" y="216" width="0.0" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6T-XP-8df">
+                                <rect key="frame" x="177" y="344" width="60" height="208"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aNa-fl-vig" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Egx-nY-gwS"/>
-                            <constraint firstItem="067-fD-6Nz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Giv-xt-F4i"/>
-                            <constraint firstItem="t6T-XP-8df" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pG5-gL-cUT"/>
+                            <constraint firstItem="t6T-XP-8df" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Di-1u-Gul"/>
+                            <constraint firstItem="t6T-XP-8df" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Nf3-Jp-cO3"/>
+                            <constraint firstItem="t6T-XP-8df" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="XJv-zm-CVU"/>
+                            <constraint firstItem="t6T-XP-8df" firstAttribute="centerX" secondItem="aNa-fl-vig" secondAttribute="centerX" id="d9A-gL-IPQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aNa-fl-vig" secondAttribute="bottom" constant="335" id="ngC-zU-nn8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="067-fD-6Nz"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="label2" destination="t6T-XP-8df" id="vua-2t-UFd"/>
@@ -53,7 +65,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="bLE-M9-fJz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1537.68115942029" y="-60.267857142857139"/>
+            <point key="canvasLocation" x="1536.4568081991215" y="-62.109374999999993"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hzs-8g-Hrz">
@@ -63,36 +75,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35x-kp-nB4">
-                                <rect key="frame" x="171" y="321" width="72" height="8"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-RG-mBD">
+                                <rect key="frame" x="67.666666666666686" y="353" width="279" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35x-kp-nB4">
+                                <rect key="frame" x="171" y="513" width="72" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="qgY-vS-1Pk"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u3T-3K-9a4">
-                                <rect key="frame" x="50" y="140" width="315" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u3T-3K-9a4">
+                                <rect key="frame" x="157" y="433" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="RkX-bo-RO6"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-RG-mBD">
-                                <rect key="frame" x="67.5" y="221" width="279" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="35x-kp-nB4" firstAttribute="centerX" secondItem="xth-th-7Wh" secondAttribute="centerX" id="45P-7G-Gp8"/>
-                            <constraint firstItem="u3T-3K-9a4" firstAttribute="centerX" secondItem="xth-th-7Wh" secondAttribute="centerX" id="E1V-hk-WR2"/>
-                            <constraint firstItem="Zob-RG-mBD" firstAttribute="centerX" secondItem="xth-th-7Wh" secondAttribute="centerX" id="KDz-15-Et3"/>
-                            <constraint firstItem="Zob-RG-mBD" firstAttribute="centerX" secondItem="xth-th-7Wh" secondAttribute="centerX" id="SLO-ro-XPp"/>
-                            <constraint firstItem="u3T-3K-9a4" firstAttribute="centerX" secondItem="xth-th-7Wh" secondAttribute="centerX" id="lg1-dW-vb8"/>
+                            <constraint firstItem="35x-kp-nB4" firstAttribute="top" secondItem="u3T-3K-9a4" secondAttribute="bottom" constant="50" id="46J-L9-wOh"/>
+                            <constraint firstItem="u3T-3K-9a4" firstAttribute="top" secondItem="Zob-RG-mBD" secondAttribute="bottom" constant="50" id="H2q-Nd-hNu"/>
+                            <constraint firstItem="u3T-3K-9a4" firstAttribute="centerX" secondItem="xth-th-7Wh" secondAttribute="centerX" id="HWL-Yx-Dhy"/>
+                            <constraint firstItem="35x-kp-nB4" firstAttribute="centerX" secondItem="xth-th-7Wh" secondAttribute="centerX" id="JMd-2b-byR"/>
+                            <constraint firstItem="35x-kp-nB4" firstAttribute="top" secondItem="u3T-3K-9a4" secondAttribute="bottom" constant="100" id="NV9-Xu-qJZ"/>
+                            <constraint firstItem="u3T-3K-9a4" firstAttribute="centerY" secondItem="xth-th-7Wh" secondAttribute="centerY" id="PHA-ZY-Ygx"/>
+                            <constraint firstItem="Zob-RG-mBD" firstAttribute="centerX" secondItem="xth-th-7Wh" secondAttribute="centerX" id="hmD-1S-Jgy"/>
+                            <constraint firstItem="u3T-3K-9a4" firstAttribute="centerX" secondItem="xth-th-7Wh" secondAttribute="centerX" id="p6B-G3-4kd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fMv-SN-NeK"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NV9-Xu-qJZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="button1" destination="35x-kp-nB4" id="Sae-zc-9kf"/>
